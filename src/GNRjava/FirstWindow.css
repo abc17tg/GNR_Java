@@ -1,0 +1,10 @@
+.first
+{
+    -fx-background-image: url("/GNRjava/palma.jpg");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+   /* -fx-max-width: none;
+    -fx-max-height: none;
+    -fx-min-width: none;
+    -fx-min-height: none;*/
+}

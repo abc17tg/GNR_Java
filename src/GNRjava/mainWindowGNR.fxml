@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" styleClass="first" stylesheets="@FirstWindow.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MyController">
+   <children>
+      <CubicCurve controlX1="-164.3333282470703" controlX2="-6.3333282470703125" controlY1="-168.47998046875" controlY2="52.85334777832031" endX="-40.190128326416016" endY="-82.80838012695312" layoutX="213.0" layoutY="116.0" opacity="0.83" scaleX="1.5" scaleY="1.5" scaleZ="1.5" startX="-164.3333282470703" startY="16.853347778320312">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startY="0.511111086890811">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.03703703731298447" green="0.5345678925514221" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.45079363868350075">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.20614035427570343" green="0.20614035427570343" blue="0.20614035427570343" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </CubicCurve>
+      <Label layoutX="40.0" layoutY="66.0" prefHeight="81.0" prefWidth="173.0" text="GNR">
+         <font>
+            <Font name="OCR A Extended" size="94.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="choiceMethodBox" layoutX="45.0" layoutY="392.0" onMouseClicked="#choiceMethodBoxOK" prefHeight="31.0" prefWidth="196.0" promptText="Metoda" />
+      <Polygon fx:id="playButton1" layoutX="293.0" layoutY="412.0" onMouseClicked="#PlayButton" points="-39.00001525878906, 34.0, 36.333343505859375, -3.33331298828125, -39.00001525878906, -42.66668701171875" strokeLineCap="ROUND" strokeType="OUTSIDE">
+         <fill>
+            <LinearGradient endX="0.06666666666666667" endY="1.0" startX="0.3492063794817243" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.33000001311302185" green="0.7096666693687439" blue="1.0" opacity="0.7293446660041809" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.33000001311302185" green="0.6984999775886536" blue="1.0" opacity="0.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007653061224489797">
+                     <color>
+                        <Color opacity="0.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4336734693877552">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Polygon>
+      <Text fx:id="playText" disable="true" fill="WHITE" layoutX="275.0" layoutY="413.0" stroke="#2e2e2e26" strokeType="OUTSIDE" text="PLAY" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="infoSymbol" layoutX="15.0" layoutY="413.0" onMouseEntered="#showInfo" onMouseExited="#hideInfo" strokeType="OUTSIDE" strokeWidth="2.0" text="ⓘ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Pane fx:id="infoPanel" layoutX="23.0" layoutY="60.0" prefHeight="347.0" prefWidth="455.0" visible="false">
+         <children>
+            <TextArea fx:id="infoText" layoutX="4.0" layoutY="5.0" prefHeight="337.0" prefWidth="447.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
